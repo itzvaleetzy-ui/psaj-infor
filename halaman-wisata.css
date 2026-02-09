@@ -97,6 +97,11 @@ main .title-info p {
   text-align: center;
 }
 
+.side-container h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 .side-container h4 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -149,4 +154,8 @@ main .title-info p {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+
+.add-info {
+  border-radius: 1.2rem;
 }
