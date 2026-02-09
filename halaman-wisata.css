@@ -1,0 +1,152 @@
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: auto 28%;
+  gap: 3rem;
+}
+
+section {
+  padding: 0;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.title-info h3 {
+  font-size: 4.5rem;
+  margin: 0.3rem 0;
+}
+
+.main-info img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+main .title-info p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.7rem;
+}
+
+.side-container {
+  padding: 1rem;
+}
+
+.main-info .description {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3em 0;
+  border-radius: 2rem;
+}
+
+.main-info .description h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-info .description h4::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 30px;
+  background-color: var(--pink);
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-right: 2.9rem;
+}
+
+.main-info .description p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0 4rem;
+}
+
+.side-container {
+  background-color: #fff;
+  padding: 2.3rem;
+  border-radius: 2rem;
+}
+
+.extra-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.side-container .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.side-container h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.side-container p {
+  font-size: 1.2rem;
+}
+
+.side-container span {
+  font-size: 3.5rem;
+  margin: -0.8rem 0.3rem 0 0.3rem;
+}
+
+.side-container .price {
+  display: flex;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.side-container .btn {
+  font-size: 1.2rem;
+}
+
+.side-container .description {
+  font-style: italic;
+  margin-top: 3rem;
+}
+
+.side-container .information {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.information .material-symbols-outlined {
+  font-size: 2.3rem;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.side-container .information {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.side-container .question {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
