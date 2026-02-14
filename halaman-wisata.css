@@ -6,13 +6,14 @@ main {
 
 .information {
   display: grid;
-  grid-template-columns: auto 28%;
+  grid-template-columns: 1fr 45rem;
   gap: 3rem;
+  max-width: 1440px;
 }
 
-section {
+/* section {
   padding: 0;
-}
+} */
 
 .main-info {
   display: flex;
@@ -35,7 +36,7 @@ section {
   border-radius: 2rem;
 }
 
-main .title-info p {
+section .title-info p {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -158,4 +159,45 @@ main .title-info p {
 
 .add-info {
   border-radius: 1.2rem;
+}
+
+.main-info .box-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 0 4rem 2rem 4rem;
+  flex-wrap: nowrap;
+}
+
+.main-info .box {
+  min-width: 30rem;
+  flex-shrink: 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+}
+
+.main-info .box .images img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2rem 2rem 0 0;
+  object-fit: cover;
+}
+
+.main-info .box .content {
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.main-info .box .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-info .box .content .btn {
+  margin-top: auto;
 }
