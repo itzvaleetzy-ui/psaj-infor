@@ -41,7 +41,7 @@ hr {
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
-  width: 35rem;
+  width: min(35rem, 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,6 +168,10 @@ header .fa-bars {
   justify-content: center;
 }
 
+.home .content p {
+  font-family: Arial;
+}
+
 @media (max-width: 768px) {
   .home .content h3 {
     font-size: 3rem;
@@ -196,7 +200,7 @@ header .fa-bars {
 }
 
 @media (max-width: 768px) {
-  html .fa-bars {
+  header .fa-bars {
     display: block;
   }
 
@@ -507,4 +511,168 @@ footer .middle::before {
   width: 1px;
   background: #000;
   opacity: 0.2;
+}
+
+@media (max-width: 1200px) {
+  .home .content h3 {
+    font-size: clamp(5rem, 11vw, 8rem);
+    line-height: 1;
+    margin-left: 0;
+  }
+
+  .home .content span {
+    font-size: clamp(1.4rem, 2vw, 2rem);
+  }
+
+  .pesan-card {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  footer .footer-content {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .icons-container .icons {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+
+  .products .box-container .box {
+    max-width: 100%;
+  }
+
+  .products .content {
+    height: auto;
+    min-height: 16rem;
+    gap: 1.5rem;
+  }
+
+  .pesan-card {
+    position: static;
+    flex-wrap: wrap;
+  }
+
+  .pesan-btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  footer .footer-content {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  footer .left,
+  footer .middle,
+  footer .right {
+    flex: 1 1 28rem;
+  }
+
+  footer .middle {
+    padding-left: 0;
+  }
+
+  footer .middle::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: 60vh;
+    background-position: center, center;
+  }
+
+  .home .content {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .home .content h3 {
+    font-size: clamp(3.8rem, 10vw, 5.2rem);
+  }
+
+  .home .content span {
+    font-size: clamp(1.3rem, 2.8vw, 1.8rem);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .icons-container {
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .icons-container .icons {
+    flex: 1 1 100%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .products .box-container {
+    gap: 1.4rem;
+  }
+
+  .products .box-container .box .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .pesan-card {
+    margin: 1.5rem 0;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  header {
+    padding: 1.2rem 1.4rem;
+  }
+
+  header .logo {
+    font-size: 2.3rem;
+  }
+
+  header .icons a {
+    font-size: 2rem;
+    margin-left: 0.8rem;
+  }
+
+  .home .content .btn {
+    width: 100%;
+  }
+
+  .products .box-container .box .content {
+    padding: 1.5rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  footer h3 {
+    font-size: 2.1rem;
+  }
+
+  footer h4 {
+    font-size: 1.7rem;
+  }
 }
