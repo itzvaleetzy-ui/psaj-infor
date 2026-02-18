@@ -3,7 +3,6 @@ body {
     linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.15)),
     url("./sources/kota-batam4.jpg") no-repeat center/cover;
   min-height: 100vh;
-  padding: 1.5rem;
 }
 
 form {
